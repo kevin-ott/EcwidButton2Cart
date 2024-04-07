@@ -1,8 +1,7 @@
-
-let btns = document.querySelectorAll(
-	"div[id^=product] div[aria-label='Jetzt kaufen']"
-);
-Ecwid.OnAPILoaded.add(() => {
+window.Ecwid.OnAPILoaded.add(() => {
+	let btns = document.querySelectorAll(
+		"div[id^=product] div[aria-label='Jetzt kaufen']"
+	);
 	btns.forEach((btn) => {
 		btn.addEventListener("click", (e) => {
 			e.stopImmediatePropagation();
