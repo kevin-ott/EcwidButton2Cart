@@ -11,7 +11,7 @@ window.Ecwid.OnAPILoaded.add(() => {
 					8
 				)
 			);
-			Ecwid.Cart.addProduct(productId, (success, product, _) => {
+			window.Ecwid.Cart.addProduct(productId, (success, product, _) => {
 				console.debug(success);
 				console.debug(`Added ${product.name} to cart.`);
 			});
